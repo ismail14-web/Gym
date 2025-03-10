@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/gym.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Add a white background with some transparency */
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the text inside the container */
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center; /* Center align the h1 element */
+    margin-bottom: 20px;
+    font-family: 'Impact', sans-serif; /* Use a bold, impactful font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for a gym-themed effect */
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button.add {
+    background-color: #28a742;
+    color: white;
+}
+
+.button.edit, .button.delete, .button.history {
+    padding: 5px 10px; /* Reduce padding for smaller buttons */
+    font-size: 14px; /* Reduce font size for smaller buttons */
+}
+
+.button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.button.history {
+    background-color: #ffc107;
+    color: white;
+}
+
+.members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px; /* Increase font size for better readability */
+}
+
+.members-table th, .members-table td {
+    padding: 15px; /* Increase padding for larger cells */
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.members-table th {
+    background-color: #f2f2f2;
+}
+
+.paid {
+    color: green;
+}
+
+.not-paid {
+    color: red;
+}
+
+/* Add this CSS to align buttons horizontally */
+.actions {
+    display: flex;
+    align-items: center; /* Ensure items are centered vertically */
+    gap: 10px; /* Adjust gap between buttons */
+}
