@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome!</h1>
+        <p>You will be redirected to the main page in <span id="countdown">3</span> seconds...</p>
+    </div>
+
+    <script>
+        // Countdown timer for redirection
+        let countdown = 3; // Number of seconds before redirect
+        const countdownElement = document.getElementById('countdown');
+
+        const interval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                window.location.href = 'index.php'; // Redirect to index.php
+            }
+        }, 1000); // Update every second
+    </script>
+</body>
+</html>
