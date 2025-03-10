@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 60%;
+    margin: 60px auto;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #495057;
+}
+
+.form-header .back-btn {
+    text-decoration: none;
+    color: #495057;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #495057;
+}
+
+.input-field, .select-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
